@@ -1,0 +1,267 @@
+:root{
+    --primary-one:  hsl(233, 26%, 24%);
+    --primary-two: hsl(136, 65%, 51%);
+    --primary-three:  hsl(192, 70%, 51%);
+    --secondary-one:  hsl(233, 8%, 62%);
+    --secondary-two: hsl(220, 16%, 96%);
+    --secondary-three: hsl(0, 0%, 98%);
+    --secondary-four:  hsl(0, 0%, 100%);
+}
+*{margin: 0;
+    padding: 0;
+
+}
+body{  
+     overflow-x: hidden;
+    box-sizing: border-box; 
+    min-height: 100vh;
+    font-family: 'public Sans'; 
+}
+
+
+    
+nav{ 
+      background-color: white; 
+     box-shadow: 3px 3px 5px rgba(0,0,0,0.1);  
+}
+nav ul{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+nav li{
+    height: 50px; 
+}
+nav a{
+    height: 100%;
+    margin-right: 80px;
+    padding-right: 2px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: black;
+}
+ /* nav a:hover{
+   underli
+}  */
+.logo li{
+    margin-right: auto;
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+
+ /* sidebar */
+.sidebar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+     display: flex; 
+     flex-direction: column; 
+    background-color: rgba(255, 255, 255, 0.726);
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 10px rgba(0,0,0,0.1);
+
+}
+ 
+.sidebar a{
+    width: 100%;
+}.menue{
+    display: none;
+}
+/* button */
+button{
+    background-color: var(--primary-two);
+    width: 8rem;
+    height: 2.5rem;
+    color: white;
+    border-radius: 1.5rem;
+    border-color: transparent;
+}
+button:hover{
+    background-color: rgb(100, 180, 63);
+    cursor: pointer;
+}
+/* design for second batch */
+.content{
+    margin-top: -25rem;
+}
+
+ .design{
+    background-image: url(./bg-intro-desktop.svg);
+    background-position: left;
+     height: 100vh;
+     margin-top: 5rem;
+     margin-left: auto;
+     width: 130vh; 
+    }
+
+#png{
+    width: 40rem;
+    margin-left: 15rem;
+}   
+.next{
+     margin-top: -20rem; 
+}
+.next, .nexts{
+    font-size: 40px;
+    margin-left: 1rem;
+}
+.next{
+    padding-top: 2rem;
+}
+.nexts{
+    margin-top: -2px;
+}
+.level1{
+    margin-left: 3rem;
+}
+.take, #in{
+ margin: 1.2rem;
+}
+.take{
+    font-size: 18px;
+    margin-top: 5px;
+    margin-left: 8rem,
+}
+.why{
+    padding: 3rem;
+}
+.why p{
+    font-size: 18px;
+}
+#per {
+    font-size: 40px;
+    padding: 15px;
+}
+.middle{
+    background-color: var(--secondary-two);
+    padding: 5rem;
+}
+.level2{
+    background-color: var(--secondary-two);
+    padding: 3rem;
+}
+#nimg{
+    width: 5rem;
+    height: 2rem;
+    margin-left: 2rem;
+}
+.middle-grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    margin-top: 5rem;
+    margin-left: 2rem;
+    line-height: 2rem;
+    align-self: center; 
+}  */
+/* third design */
+
+  .main{
+   margin-left: 5rem;
+   padding-top: 2rem;
+ }
+ 
+  #new{   
+    margin-left: 10px;
+    height: 200px;
+    width: 180px;
+  }
+  .wrapper{
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    gap: 15px;
+    margin-top: 5rem;
+    margin-left: 2rem;
+    line-height: 2rem;
+    align-self: center; 
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    margin: 0,5rem 0,2rem;
+    line-height: 2rem;
+    align-self: center; 
+    margin-left: 3rem;
+}
+
+footer{
+    background-color: var(--primary-one);
+    margin: 1, 3rem; 
+} 
+
+
+
+/* design for smaller devices  */
+
+.me-btn{
+    display: none;
+}
+
+   @media(max-width: 800px){
+    .nVisible{
+     display: none; 
+    }
+    
+  }  
+  @media(max-width: 500px){
+    .sidebar{
+        width: 100%;
+    }
+    .me-btn{
+        display: block;
+       }
+       body{
+        font-size: 12px;
+        font-weight: 100;
+        overflow-x: hidden;
+        box-sizing: border-box; 
+        margin-left: 3rem;
+        min-height: 100vh;
+        font-family: 'public Sans';     
+       }
+    .design{
+        width: 100vh;
+        height: 70vh;
+         margin-top: 10px; 
+        background-image: url(./bg-intro-mobile.svg);  
+         background-size: cover; 
+         }
+     #png{
+         width: 25rem;
+         margin-left: 2rem;
+         /* margin-top: -5rem; */
+         position: top;
+    } 
+    .content{
+        padding-top: 40rem;
+        font-size: 7px;
+    }
+     .level1{
+        font-size: 6px;
+        padding-top: 10rem;
+    }
+    .why{
+        margin-left: -3rem;
+    }
+    .main{
+        margin-left: 3rem;
+        margin-top: 2rem;
+        margin-bottom: -1rem;
+    }
+    .middle-grid{
+        display: inline;
+    }
+    .wrapper{
+    display: inline;
+    margin: 7rem;
+    }
+  }   
